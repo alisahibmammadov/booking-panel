@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="reservation">
+
+      <section class="warning-alert-back">
+        <div class="warning-alert">
+          <div class="xmark">
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <div class="msg">
+            <span>Please, fill the all required fields!</span>
+          </div>
+        </div>
+      </section>
+      <section class="success-alert-back">
+        <div class="success-alert">
+          <div class="xmark">
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <div class="msg">
+            <span>Confirmation successfully completed!</span>
+          </div>
+        </div>
+      </section>
+      
+
+      <nav class="navigation-side">
+        <a href="#" class="staffLink">
+          <span>1</span>
+          <i class="fa-solid fa-check"></i>
+          Staff
+        </a>
+        <a href="#" class="serviceLink">
+          <span>2</span>
+          <i class="fa-solid fa-check"></i>
+          Service
+        </a>
+        <a href="#" class="dateTimeLink">
+          <span>3</span>
+          <i class="fa-solid fa-check"></i>
+          Date & Time
+        </a>
+        <a href="#" class="confirmLink">
+          <span>4</span>
+          <i class="fa-solid fa-check"></i>
+          Confirmation
+        </a>
+      </nav>
+      <main>
+
+        <section class="staff-page">
+
+          <header class="staff-header">
+            <span>Select staff</span>
+            <i class="fa-solid fa-x"></i>
+          </header>
+
+          <div class="staff-section">
+            <div class="staff-box">
+              <img src="./assets/img/profil1.png" alt="" width="50" />
+              <div class="box-info">
+                <p>Alex Rosetta</p>
+                <span>alexyrosetta@egmail.com</span>
+              </div>
+            </div>
+            <div class="staff-box">
+              <img src="./assets/img/profil1.png" alt="" width="50" />
+              <div class="box-info">
+                <p>Maria July</p>
+                <span>mariajuly@egmail.com</span>
+              </div>
+            </div>
+          </div>
+
+          <footer class="staff-footer">
+            <button type="button" class="staffBack">BACK</button>
+            <button type="button" class="staffWarning">
+              <i class="fa-solid fa-exclamation"></i>
+              SELECT STAFF
+            </button>
+            <button type="button" class="staffNext">NEXT</button>
+          </footer>
+        </section>
+
+        <section class="service-page">
+          <header class="service-header">
+            <span>Select service</span>
+            <i class="fa-solid fa-x"></i>
+          </header>
+
+          <div class="service-section">
+            <div class="service-box">
+              <div class="box">
+                <img src="./assets/img/profil1.png" alt="" width="50" />
+                <div class="service-box-info">
+                  <p>Oral hygiene</p>
+                  <span>1 hour</span>
+                </div>
+              </div>
+              <span class="price">50$</span>
+            </div>
+            <div class="service-box">
+              <div class="box">
+                <img src="./assets/img/profil1.png" alt="" width="50" />
+                <div class="service-box-info">
+                  <p>Implants</p>
+                  <span>1 hour 30 minutes</span>
+                </div>
+              </div>
+              <span class="price">120$</span>
+            </div>
+            <div class="service-box">
+              <div class="box">
+                <img src="./assets/img/profil1.png" alt="" width="50" />
+                <div class="service-box-info">
+                  <p>Check up</p>
+                  <span>1 hour 12 minutes</span>
+                </div>
+              </div>
+              <span class="price">140$</span>
+            </div>
+          </div>
+
+          <footer class="service-footer">
+            <button type="button" class="serviceBack">BACK</button>
+            <button type="button" class="serviceWarning">
+              <i class="fa-solid fa-exclamation"></i>
+              SELECT SERVICE
+            </button>
+            <button type="button" class="serviceNext">NEXT</button>
+          </footer>
+        </section>
+
+        <section class="date-time-page">
+          <header class="date-time-header">
+            <span>Select date & time</span>
+            <i class="fa-solid fa-x"></i>
+          </header>
+
+          <div class="date-time-section">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <span id="prev-date"><i class="fa-solid fa-chevron-left"></i></span>
+                    <h3 id="month-year">April 2023</h3>
+                    <span id="next-date"><i class="fa-solid fa-chevron-right"></i></span>
+                </div>
+                <div class="calendar-box">
+                    <ul class="weeks">
+                      <li>Sun</li>
+                      <li>Mon</li>
+                      <li>Tue</li>
+                      <li>Wed</li>
+                      <li>Thu</li>
+                      <li>Fri</li>
+                      <li>Sat</li>
+                    </ul>
+                    <ul class="days-box">
+                      
+                    </ul>
+                  </div>
+            </div>
+            <div class="calendar-select">
+                <div class="select-header">
+                    <h3>Time</h3>
+                </div>
+                <div class="select-box">
+                  <div class="select-box-header">
+                    <!-- <span>Select date: </span> -->
+                  </div>
+                  <div class="select-box-section">
+                    <div class="box">
+                      <span>09:00</span>
+                      <span>09:30</span>
+                    </div>
+                    <div class="box">
+                      <span>09:30</span>
+                      <span>10:00</span>
+                    </div>
+                    <div class="box">
+                      <span>10:00</span>
+                      <span>10:30</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+          <footer class="date-time-footer">
+            <button type="button" class="dateTimeBack">BACK</button>
+            <button type="button" class="dateTimeWarning">
+              <i class="fa-solid fa-exclamation"></i>
+              SELECT DATE & TIME
+            </button>
+            <button type="button" class="dateTimeNext">NEXT</button>
+          </footer>
+        </section>
+
+        <section class="confirm-page">
+
+          <header class="confirm-header">
+            <span>Confirm details</span>
+            <i class="fa-solid fa-x"></i>
+          </header>
+
+          <div class="confirm-section">
+              <form class="confirm-form">
+                <div>
+                    <label for="name">First name <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="surname">Last name <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                    <input type="text" id="surname">
+                </div>
+                <div>
+                    <label for="email">E-mail <sup><i class="fa-solid fa-star-of-life"></i></sup></label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone">
+                </div>
+                
+            </form>
+            <div class="confirm-note">
+              <h4>Note</h4>
+                <div class="note-box">
+                    <p>Staff: <span class="staff">Alexy Rosetta</span></p>
+                    <p>Service: <span class="service">Oral hygiene</span></p>
+                    <p>Date: <span class="date">2022-03-04 / 09:30-10:00</span></p>
+                    <p>Staff: <span class="price">$123</span></p>
+                </div>
+            </div>
+          </div>
+
+          <footer class="confirm-footer">
+            <button type="button" class="confirmBack">BACK</button>
+            <button type="button" class="confirmWarning">
+              <i class="fa-solid fa-exclamation"></i>
+              Select Date & Time
+            </button>
+            <button type="button" class="confirmBooking">CONFIRM BOOKING</button>
+          </footer>
+
+        </section>
+      </main>
+    </div>
+
+
+    <script src="./app.js"></script>
+  </body>
+</html>
